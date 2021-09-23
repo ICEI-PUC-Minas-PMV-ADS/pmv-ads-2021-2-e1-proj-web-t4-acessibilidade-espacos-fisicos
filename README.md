@@ -1,23 +1,24 @@
-# TÍTULO DO PROJETO
+# Acessibilidade, Mobilidade e Adaptação de Espaços Públicos para Deficientes Visuais
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`PROJETO`
 
-`SEMESTRE`
+`2021/2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de Aplicação Web Front-End do curso de Análise e Desenvolvimento de Sistemas da PUC Minas.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Bárbara Augusta Silva Pereira
+* Eduardo Lucci I. de Andrade
+* Gabriel Silva Machado 
+* Henrique Augusto de Magalhães Silva
+* Marco Antônio Tavares Duarte
 
 ## Orientador
 
-* Nome completo do professor 1
+* Will
 
 ## Instruções de utilização
 
