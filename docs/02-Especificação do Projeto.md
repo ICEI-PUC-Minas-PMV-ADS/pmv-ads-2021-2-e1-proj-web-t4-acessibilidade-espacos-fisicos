@@ -1,16 +1,16 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação dos usuários em um trabalho de imersão feito pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+|NOME              | IDADE | OCUPAÇÃO                 | APLICATIVOS                                         | MOTIVAÇÕES                                                 | FRUSTRAÇÕES                                                                                                                                                                                    | HOBBIES E HISTÓRIAS                 |
+|------------------|-------|--------------------------|-----------------------------------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| Isabela Cristina | 24    | Estudante de direito     | Instagram e Facebook                                | Facilidade, busca por lugares diferentes e independência   | Extrema dependência de outras pessoas, constrangimento frequente e dificuldades escessivas                                                                                                    | Leitura e encontrar os amigos      |
+|Lucas Lima        | 22    | Desempregado             | Facebook, instagram, youtube e aplicativos de banco | Busca por lazer, conhecer novos lugares e interação social |   Falta de locais adaptados, condição financeira insuficiente para usufruir de um bom atendimento, se sentir envergonhado e não saber os locais em que pode ser atendido corretamente | Escutar música, leitura e cozinhar |
+
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
@@ -24,14 +24,17 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                                                                                     |PARA ... `MOTIVO/VALOR`                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+|Isabela Cristina    | Ter acesso a informação sobre estabelecimentos que tenham uma boa assistência aos deficientes visuais | Não passar por constrangimentos e dificuldades excessivas ao adentrar estes estabelecimentos                                                          |
+|Isabela Cristina    | Um espaço onde possa trocar ideias com outros colegas portadores de deficiência visual sobre diversos estabelecimentos | Sempre estarmos ligados sobre locais que realmente possuem um auxílio adequado ou se a assistência que dizem ter é apenas de fachada |
+|Isabela Cristina    | Compartilhar informações sobre estabelecimentos, não presentes no sistema, que possuem auxílio ao deficiente visual    | Facilitar a procura por esses estabelecimentos, deixando mais simples para todos                                                     |
+|Lucas Lima          | Ter conhecimento de quais espaços possuam adaptações físicas e comportamentais para atendimento e auxílio de deficientes visuais | Evitar contratempos e vergonha ao me dirigir a um local que não possa atender minhas necessidades e limitações físicas       |
+|Lucas Lima          | Um espaço para avaliar os locais visitados por mim                                                                     | Deixar recomendações ou reclamações sobre o atendimento prestado                                                               |
+|Lucas Lima          | Compartilhar com outras pessoas com limitações físicas os locais bem adaptados                                         | Incentivar e demonstrar a essas pessoas que elas podem usufruir de serviços e lazer                                                    |
+|Lucas Lima          | Saber a opinião de outras pessoas sobre os locais que possuem auxílio para deficientes visuais                         | Decidir se o local prestaria um bom atendimento e auxílio                                                                              |
 
 > **Links Úteis**:
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
@@ -42,22 +45,39 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+
+|ID    | Descrição do Requisito                                                                                                                                    | Prioridade |
+|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+|RF-001| O site deve apresentar na página principal locais de destaque que possam atender de maneira eficiente os grupos com deficiência visual (API)              | ALTA       | 
+|RF-002| O site deve apresentar uma imagem correspondente ao local destacado na página principal (thumbnail)                                                       | MÉDIA      |
+|RF-003| O site deve permitir ao usuário se informar sobre a descrição do local, com diversos detalhes. Ex: endereço, telefone, horário de funcionamento.          | ALTA       |
+|RF-004| O site deve oferecer um mapa para que seja possível verificar onde ficam os locais, para saber da proximidade e auxílio em viagens, por exemplo.          | ALTA       |
+|RF-005| O site deve permitir que, ao selecionar o local no mapa, seja possível verificar todas as informações a respeito do mesmo.                                | ALTA       |
+|RF-006| O site deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar um tema específico que será informado na caixa de pesquisa. | ALTA       |
+|RF-007| O site deve permitir visualizar as informações de contatos do mantenedor da aplicação web.                                                                | BAIXA      |
+|RF-008| O site deve permitir o compartilhamento de locais visitados ou avaliados em plataformas de redes sociais                                                  | MÉDIA      |
+|RF-009| O site deve permitir salvar os locais de preferência                                                                                                      | MÉDIA      |
+|RF-010| O site deve permitir verificar os locais salvos como preferidos                                                                                           | ALTA       |
+|RF-011| O site deve permitir que usuários possam tecer comentários sobre os locais.                                                                               | ALTA       |
+|RF-012| O site deve exibir os comentários registrados juntamente com o local em amostra.                                                                          | ALTA       |
 
 
 ### Requisitos não Funcionais
 
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender:
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku). | ALTA | 
+|RNF-002| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada. |  ALTA | 
+|RNF-003| O site deverá ser completamente acessível para dificientes visuais, com textos objetivos e claros para descrição de imagens, arquivos e texto. |  ALTA | 
+|RNF-004| O site deve ter bom nível de contraste entre os elementos da tela em conformidade. |  MÉDIA | 
+|RNF-005| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge). |  ALTA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -76,15 +96,14 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir:
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 10/12/2023. |
+|02| O aplicativo deve se restringir às tecnologias básicas da Web no Frontend      |
+|03| A equipe não pode subcontratar o desenvolvimento do trabalho. |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
