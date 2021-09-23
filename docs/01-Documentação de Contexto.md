@@ -12,10 +12,7 @@ Dessa forma, o presente projeto tem como objetivo a criação de um website que 
 
 Embora o Brasil seja um país de grande população, não são todos os indivíduos que possuem meios de transitar, se deslocar e acessar os locais desejados. É importante pontuar que as pessoas portadoras de deficiência são um dos principais grupos afetados por esse problema, ao não conseguirem, muitas vezes, sair na rua e realizar com tranquilidade tarefas simples e habituais, o que acaba afetando a qualidade de vida dessas pessoas. 
 
-Segundo o último Censo Demográfico, realizado pelo IBGE em 2010, aproximadamente 25% da população brasileira possui algum tipo de deficiência, onde cerca de 60% desses deficientes estão no grupo com problemas visuais. Os dados relatados estão dispostos nos gráficos abaixo.
-
-
-Fonte: IBGE – Instituto Brasileiro de Geografia e Estatística. Censo Demográfico 2010.
+Segundo o último Censo Demográfico, realizado pelo IBGE em 2010, aproximadamente 25% da população brasileira possui algum tipo de deficiência, onde cerca de 60% desses deficientes estão no grupo com problemas visuais.
 
 Segundo a definição de deficiente visual dada por Conde, existem as chamadas “cegueira parcial” (também dita legal ou profissional) e "cegueira total". Nessa primeira categoria estão os indivíduos apenas capazes de contar dedos a curta distância e os que só percebem vultos. Também se encontram os deficientes visuais que só têm percepção de projeções luminosas, sendo que alguns apenas conseguem distinguir entre claro e escuro, enquanto outros são capazes de identificar também a direção de onde provém a luz. Já a cegueira total, ou simplesmente amaurose, pressupõe completa perda de visão. A visão é nula, isto é, nem a percepção luminosa está presente. No jargão oftalmológico, usa-se a expressão “visão zero”.
 
