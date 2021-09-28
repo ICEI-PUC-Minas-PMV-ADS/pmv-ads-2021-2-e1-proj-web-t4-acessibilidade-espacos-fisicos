@@ -18,7 +18,7 @@ Desenvolvimento de Aplicação Web Front-End do curso de Análise e Desenvolvime
 
 ## Orientador
 
-* Will
+* Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
 
