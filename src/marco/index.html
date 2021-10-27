@@ -1,0 +1,44 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto</title>
+    <link rel="stylesheet" href="style.css">
+<script src="dbfake.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="https://www.youtube.com/embed/dqE50LUi1xI">PODCASTS</a></li>
+                <li>DOWNLOAD ABC BRAILE</li>
+                <li>NOME DO SITE</li>
+                <li>DOE</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> Consulte seu local</h1>
+        <div id="lista-locais">
+        </div>
+    </main>
+    <footer>
+        Copyright 2021 (c) Projeto Puc
+    </footer>
+    <script>
+        var locs = '';
+        for (i=0; i < db.dados.length; i++) {
+            locs += `<p class="local-item">Local: ${ db.dados[i].titulo} <br> <img 
+src="${db.dados[i].foto}"><br> Descrição:"${db.dados[i].descrição}"<br> Acessibilidade: 
+"${db.dados[i].acesso}<br></p>`;
+        }
+        document.getElementById('lista-locais').innerHTML = locs;
+        
+    </script>
+</body>
+</html>
