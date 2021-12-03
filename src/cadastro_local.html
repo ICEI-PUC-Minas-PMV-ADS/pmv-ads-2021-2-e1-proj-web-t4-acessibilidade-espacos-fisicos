@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar local</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <script src="https//use.fontawesome.com/ae97aecf40a.js"></script>
+    <script src="dbfake.js"></script>
+</head>
+
+<body>
+    <div id="fundo">
+        <img class="logo" src="oculos.png">
+        <div class="titulo">
+          <h1>Olhos Guiados</h1>
+        </div>
+      </div>
+      <nav class="menu-principal">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="braile.html">Braile</a></li>
+              <li><a href="#">Doações</a></li>
+              <li><a href="quem.html">Quem Somos</a></li>
+              <li><a href=locais.html>Locais</a></li>
+              <input class="search-txt" type="text" name="" placeholder="Pesquise">
+              <li><a href=login.html>Login</a></li>
+          </ul>
+    <h1>Cadastro de Locais</h1>
+
+
+        <form id="form-local">
+                <div class="col-sm-8">
+                    <label for="inputNome">Nome</label>
+                    <input type="text" class="form-control" id="inputNome" required placeholder="Informe o nome do local">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="inputEndereço">Endereço</label>
+                    <input type="text" class="form-control" id="inputEndereço" required placeholder="Endereço">
+                </div>
+                <div class="col-sm-7">
+                    <label for="inputNota">Nota</label>
+                    <input type="text" class="form-control" id="inputNota" required placeholder="Nota">
+                </div>
+            </div>
+                <div class="col-sm-6">
+                    <label for="inputComentario">Comentário</label>
+                    <input type="text" class="form-control" id="inputComentario" required placeholder="Comentario">
+                </div>
+            </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                </div>
+            </div>
+        </form>
+    <footer>
+        <div class="footer-content">
+          <h3>Olhos Guiados</h3>
+          <p>Já pensou em ir vendado?</p>
+          <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+         <div class="footer-bottom">
+           <p>COPYRIGHT &copy;2021 OlhosGuiados. designed by <span>Turma 4</span></p>
+         </div>
+      </footer>
+      <script>
+      function init() {
+        // Adiciona funções para tratar os eventos 
+        $("#btnInsert").click(function () {
+            // Verfica se o formulário está preenchido corretamente
+            if (!$('#form-local')[0].checkValidity()) {
+                displayMessage("Preencha o formulário corretamente.");
+                return;
+            }
+            // Obtem os valores dos campos do formulário
+            let campoNome = $("#inputNome").val();
+            let campoEndereço = $("#inputEndereço").val();
+            let campoNota = $('#inputNota').val();
+            let campoComentario = $("#inputComentario").val();
+            let novolocal = { nome: campoNome, 
+                endereço: campoEndereço, 
+                nota: campoNota, 
+                comentario: campoComentario, 
+               };
+            insertLocal(locais);
+        });
+    }
+    </script>
+</body>
+</html>

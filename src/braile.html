@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braille</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https//use.fontawesome.com/ae97aecf40a.js"></script>
+    <script src="dbfake.js"></script>
+</head>
+<body>
+    <div id="fundo">
+      <img class="logo" src="oculos.png">
+      <div class="titulo">
+        <h1>Olhos Guiados</h1>
+      </div>
+    </div>
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="braile.html">Braile</a></li>
+            <li><a href="#">Doações</a></li>
+            <li><a href="quem.html">Quem Somos</a></li>
+            <li><a href=locais.html>Locais</a></li>
+            <input class="search-txt" type="text" name="" placeholder="Pesquise">
+            <li><a href=login.html>Login</a></li>
+        </ul>
+    </nav>
+    <div id="fundo2">
+    <p class= "title"> Sobre o braille</p>
+    <p class="paragrafo">O braille é o sistema de escrita e leitura utilizado pelos deficientes visuais. A leitura se dá pelo toque
+        no papel em relevo, onde os códigos do braille são marcados. Essa escrita pode acontecer de diversas maneiras
+        sendo elas: o reglete e punção, máquina de escrever em braile, notetaker em braille e etc. Além disso a leitura
+        por meio de computadores também é possível, os aplicativos de voz e leitura são os que auxiliam os deficientes
+        visuais a navegarem pela Web sem passar por tanta dificuldade, contudo também existe os mostradores de braile
+        atualizados, que auxiliam nesse processo.</p>
+
+    <p class="paragrafo">Abaixo você irá encontrar uma lista de livros que vão te auxiliam e te inserir no mundo do braile, 
+        te ensinando como funciona, como ler e escrever os códigos e também vão te apresentar a história, como o braile foi
+        criado e com que intuíto foi criado, o que tomou como inspiração e muito mais, além também de livros que mostram as
+        dificuldades dos deficientes visuais. São conteúdos que irão agregar muito aos que desejam conhecer mais sobre este 
+        mundo.</p>
+    </div>
+    <!--QUEBRA DE LINHA-->
+    <main>
+        <p class= "title">LIVROS</p>
+        <div id="lista-livros">
+
+        </div>
+      </main>
+    <footer>
+      <div class="footer-content">
+        <h3>Olhos Guiados</h3>
+        <p>Já pensou em ir vendado?</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+       <div class="footer-bottom">
+         <p>COPYRIGHT &copy;2021 OlhosGuiados. designed by <span>Turma 4</span></p>
+       </div>
+    </footer>
+    <script>
+
+        var book = '';
+        for (i=0; i <livros.livros.length; i++) {
+          book += `<p class ="expor-item"> Livro: ${livros.livros[i].titulo} <br> <img class="imagem" src="${livros.livros[i].imagem}" <br> ${livros.livros[i].descricao} <br> ${livros.livros[i].mapa}</p>`;
+        }
+        document.getElementById('lista-livros').innerHTML=book;
+    
+      </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https//use.fontawesome.com/ae97aecf40a.js"></script>
+    <script src="dbfake.js"></script>
+</head>
+<body>
+    <div id="fundo">
+      <img class="logo" src="oculos.png">
+      <div class="titulo">
+        <h1>Olhos Guiados</h1>
+      </div>
+    </div>
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="braile.html">Braile</a></li>
+            <li><a href="#">Doações</a></li>
+            <li><a href="quem.html">Quem Somos</a></li>
+            <li><a href=locais.html>Locais</a></li>
+            <input class="search-txt" type="text" name="" placeholder="Pesquise">
+            <li><a href=login.html>Login</a></li>
+        </ul>
+    </nav>
+    <div id="fundo2">
+    <p class= "title"> Podcasts</p>
+    <iframe width="260" height="115" src="https://www.youtube.com/embed/dqE50LUi1xI" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <iframe width="260" height="115" src="https://www.youtube.com/embed/qu-V7tdmcWw" title="YouTube video player"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+    </div>
+   <!--QUEBRA DE LINHA-->
+    <main>
+      <h1>Locais</h1>
+      <div id="lista-locais">
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h3>Olhos Guiados</h3>
+        <p>Já pensou em ir vendado?</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+       <div class="footer-bottom">
+         <p>COPYRIGHT &copy;2021 OlhosGuiados. designed by <span>Turma 4</span></p>
+       </div>
+    </footer>
+    <script>
+
+        var locs = '';
+        for (i=0; i <2; i++) {
+          locs += `<p class ="expor-item"> Local:<br> ${locais.locais[i].nome} <br> <img class="imagem" src="${locais.locais[i].foto}"> <br> ${locais.locais[i].endereço} <br> ${locais.locais[i].nota} <br> ${locais.locais[i].comentario}</p>`;
+        }
+        document.getElementById('lista-locais').innerHTML=locs;
+    
+      </script>
+</body>
+</html>
